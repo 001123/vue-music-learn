@@ -2,6 +2,7 @@
   <div id="app">
     <h1>Learn Music with vue</h1>
     <div id="paper"></div>
+    <textarea style="width: 100%" rows="10"></textarea>
   </div>
 </template>
 
@@ -22,7 +23,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "codyhouse-framework/main/assets/css/base";
+
 #app {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
