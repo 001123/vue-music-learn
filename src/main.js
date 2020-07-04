@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import "abcjs/abcjs-audio.css";
 
 Vue.config.productionTip = false;
 

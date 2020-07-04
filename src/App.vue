@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />
+    <h1>Learn Music with vue</h1>
+    <div id="paper"></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
+import abcjs from "abcjs";
 export default {
   name: "App",
-  components: {
-    HelloWorld
+  components: {},
+  mounted() {
+    abcjs.renderAbc(
+      "paper",
+      `
+    K:C
+    DDAA|BBA2|
+    `
+    );
   }
 };
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
