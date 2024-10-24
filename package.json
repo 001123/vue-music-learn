@@ -11,7 +11,7 @@
     "@vue/cli-plugin-babel": "4.1.1",
     "abcjs": "6.0.0-beta.12",
     "codyhouse-framework": "2.7.4",
-    "vue": "2.6.11"
+    "vue": "3.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "4.1.1",
